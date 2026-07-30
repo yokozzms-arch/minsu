@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>민수 채팅</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="phone">
+    <!-- 상단 헤더 -->
+    <header class="chat-header">
+      <button class="header-btn back-btn" aria-label="뒤로가기">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4-4.6-4.6z"/></svg>
+      </button>
+      <div class="header-title">
+        <span class="room-name">민수</span>
+      </div>
+      <div class="header-actions">
+        <button class="header-btn" aria-label="검색">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.49 4.49 0 0 1 9.5 14z"/></svg>
+        </button>
+        <button class="header-btn" aria-label="메뉴">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- 채팅 영역 -->
+    <main class="chat-body" id="chatBody">
+      <div class="date-divider"><span>2026년 7월 30일 목요일</span></div>
+    </main>
+
+    <!-- 하단 입력창 -->
+    <footer class="chat-input">
+      <button class="input-btn plus-btn" aria-label="추가">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"/></svg>
+      </button>
+      <div class="input-wrap">
+        <textarea id="messageInput" rows="1" placeholder="메시지 입력"></textarea>
+        <button class="emoji-btn" aria-label="이모티콘">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-3.5-9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM12 17.5c2.03 0 3.8-1.11 4.75-2.75h-9.5A5.48 5.48 0 0 0 12 17.5z"/></svg>
+        </button>
+      </div>
+      <button class="send-btn" id="sendBtn" aria-label="전송">전송</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
