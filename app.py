@@ -3299,7 +3299,7 @@ def monitor_instagram():
 # ── 정적 파일 ─────────────────────────────────────────────────────────────────
 @app.route("/")
 def index():
-    return send_from_directory("static", "index.html")
+    return send_from_directory(".", "index.html")
 
 if __name__ == "__main__":
     os.makedirs("static", exist_ok=True)
