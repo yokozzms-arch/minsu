@@ -1,0 +1,7 @@
+flask
+flask-cors
+requests
+openpyxl
+gunicorn
+Pillow
+python-pptx
